@@ -27,7 +27,7 @@ public class GSave implements BankAccountDecorator {
 
     @Override
     public String showBenefits() {
-        return account.showBenefits() + " + GCash Transfer";
+        return account.showBenefits() + ", GCash Transfer";
     }
 
     @Override
@@ -40,3 +40,4 @@ public class GSave implements BankAccountDecorator {
         return account.showInfo();
     }
 }
+
