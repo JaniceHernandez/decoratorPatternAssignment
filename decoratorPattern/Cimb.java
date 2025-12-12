@@ -9,7 +9,7 @@ public class Cimb {
 		
 		System.out.println(account.showInfo());
 		System.out.println("Account type: " + account.showAccountType());
-		System.out.println("Interest rate: " + account.getInterestRate());
+		System.out.println("Interest rate: " + account.getInterestRate()/100);
 		System.out.println("New balance: " + account.computeBalanceWithInterest());
 		System.out.println("Benefits: " + account.showBenefits());
 		
@@ -18,7 +18,7 @@ public class Cimb {
 		GSave gSave = new GSave(account);
 		System.out.println(gSave.showInfo());
 		System.out.println("Account type: " + gSave.showAccountType());
-		System.out.println("Interest rate: " + gSave.getInterestRate());
+		System.out.println("Interest rate: " + gSave.getInterestRate()/100);
 		System.out.println("New balance: " + gSave.computeBalanceWithInterest());
 		System.out.println("Benefits: " + gSave.showBenefits());
 		
@@ -27,8 +27,9 @@ public class Cimb {
 		UpSave upSave = new UpSave(account);
 		System.out.println(upSave.showInfo());
 		System.out.println("Account type: " + upSave.showAccountType());
-		System.out.println("Interest rate: " + upSave.getInterestRate());
+		System.out.println("Interest rate: " + upSave.getInterestRate()/100);
 		System.out.println("New balance: " + upSave.computeBalanceWithInterest());
 		System.out.println("Benefits: " + upSave.showBenefits());
 	}
 }
+
