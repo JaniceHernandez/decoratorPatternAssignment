@@ -27,7 +27,7 @@ public class UpSave implements BankAccountDecorator {
 
     @Override
     public String showBenefits() {
-        return account.showBenefits() + " + With Insurance";
+        return account.showBenefits() + ", With Insurance";
     }
 
     @Override
@@ -40,3 +40,4 @@ public class UpSave implements BankAccountDecorator {
         return account.showInfo();
     }
 }
+
